@@ -40,3 +40,11 @@ for file in file_names:
         shutil.move(path + file, path + "SocialStudies/" + file)
     elif "social Studies" in file and not os.path.exists((path + "SocialStudies/" + file)):
         shutil.move(path + file, path + "SocialStudies/" + file)
+    elif "ELA" in file and not os.path.exists((path + "ELA/" + file)):
+        shutil.move(path + file, path + "ELA/" + file)
+    elif "ela" in file and not os.path.exists((path + "ELA/" + file)):
+        shutil.move(path + file, path + "ELA/" + file)
+    elif "English" in file and not os.path.exists((path + "ELA/" + file)):
+        shutil.move(path + file, path + "ELA/" + file)
+    elif "english" in file and not os.path.exists((path + "ELA/" + file)):
+        shutil.move(path + file, path + "ELA/" + file)
