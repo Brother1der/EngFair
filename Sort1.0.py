@@ -6,11 +6,11 @@ path = r"/Users/conniewunder/Desktop/Testsortingfiles/"
 file_names = os.listdir(path)
 
 #Tells the program what the names are.
-sortnames = ['SocialStudies','Science','Math']
+sortnames = ['SocialStudies','Science','Math',ELA]
 
 
 #This stuff down here says to create a file named one of the three names in "sortnames" if there isn't already a file called that.
-for loop in range(0,3):
+for loop in range(0,4):
     if not os.path.exists(path + sortnames[loop]):
         print(path + sortnames[loop])
         os.makedirs((path + sortnames[loop]))
